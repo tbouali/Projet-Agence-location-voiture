@@ -1,0 +1,63 @@
+Étape 1 — Créer la classe Vehicle
+// Propriétés et constructeur.
+Étape 2 — Ajouter les méthodes
+// displayInfo(), rent() et returnVehicle().
+Étape 3 — Créer Car et Motorcycle
+// Héritage, extends et super().
+Étape 4 — Overriding et polymorphisme
+// Redéfinir displayInfo().
+Étape 5 — Créer plusieurs véhicules
+// Instances et tableau d'objets.
+Étape 6 — Créer RentalAgency
+// Nom et tableau de véhicules.
+// déjà un tableau vehicles contenant quatre véhicules. Ici, nous créons un nouveau tableau qui appartient à l'agence. Nous allons transférer les véhicules existants dans ce tableau.
+// class RentalAgency : crée la classe de l'agence.
+// constructor(name) : reçoit le nom de l'agence.
+// this.name = name : enregistre le nom.
+// this.vehicles = [] : crée un tableau vide pour stocker les véhicules.
+Étape 7 — Ajouter les méthodes de l'agence
+//  Ajouter,afficher et rechercher.
+ Étape 8 — Gérer les locations
+ Louer et retourner un véhicule.
+// Étape 9 — Tester l'application
+// Vérifier les neuf scénarios du cahier des charges.
+// Étape 10 — Encapsulation
+// Propriété privée, getter et setter.
+// Étape 11 — Bonus
+// Calculer le prix selon le nombre de jours.
+// Étape 12 — Bilan final
+// Expliquer toutes les notions POO.
+************************************************
+// extends : permet l'héritage.
+// super() : appelle le constructeur parent.
+// super.displayInfo() : appelle la méthode du parent.
+// displayInfo() dans Car et Motorcycle : redéfinition (Overriding).
+// Le polymorphisme : même méthode, résultat différent selon l'objet.
+// - class Car extends Vehicle : Car hérite de Vehicle.
+// - constructor(...) : reçoit les propriétés de la voiture.
+// - super(...) : appelle le constructeur de Vehicle.
+// - this.numberOfDoors : ajoute une propriété spécifique à Car.
+// - displayInfo() : redéfinit la méthode héritée.
+// - super.displayInfo() : exécute d'abord la méthode originale de Vehicle.
+// - console.log(...) : affiche le nombre de portes.
+// Attention : super.displayInfo() permet de réutiliser le code du parent sans le recopier
+// vehicles = le tableau des véhicules.
+// push() = ajouter un élément.
+// car1 = le véhicule qu'on veut ajouter.
+// Louer un véhicule : true → false.
+// Retourner un véhicule : false → true.
+
+// gency1.vehicles représente le tableau contenant les quatre véhicules.
+C'est exactement le polymorphisme : utiliser la même méthode sur différents types d'objets et obtenir un comportement adapté à chaque objet.
+#pricePerDay; : déclare la propriété privée.
+this.#pricePerDay = pricePerDay; : stocke le prix dans la propriété privée.
+get pricePerDay() : permet de lire le prix.
+set pricePerDay(newPrice) : permet de modifier le prix.
+
+if (newPrice > 0) : vérifie que le prix est positif.
+this.pricePerDay appelle automatiquement le getter
+get = lire le prix.
+set = modifier le prix.
+#pricePerDay = protéger le prix.
+la méthode utilise this.pricePerDay, donc elle récupère le prix grâce au getter de l'étape 10
+this représente l'objet qui appelle la méthode.
